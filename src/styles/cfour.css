@@ -1,0 +1,56 @@
+/* Container for the whole game */
+#connect-four-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Game board styling */
+#connect-four-board {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px; /* Gap between game board and reset button */
+}
+
+/* Row styling within the board */
+.connect-four-row {
+  display: flex;
+}
+
+/* Cell styling */
+.connect-four-cell {
+  width: 60px; /* Adjust the size of each cell */
+  height: 60px; /* Ensure height matches width for a square */
+  background-color: #ddd;
+  border-radius: 50%; /* Makes the cell circular */
+  margin: 5px; /* Space between cells */
+  cursor: pointer; /* Pointer cursor on hover */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s; /* Smooth color transition */
+}
+
+/* Player piece styles */
+.connect-four-cell.R {
+  background-color: red; /* Color for Red player */
+}
+
+.connect-four-cell.Y {
+  background-color: yellow; /* Color for Yellow player */
+}
+
+/* Winner message */
+#connect-four-status {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Button styling */
+#connect-four-reset-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}

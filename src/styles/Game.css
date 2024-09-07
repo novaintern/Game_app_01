@@ -1,0 +1,57 @@
+/* Container for the game component */
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+/* Scores section styling */
+.scores {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 20px;
+}
+
+.score {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Game selector styling */
+.game-selector {
+  display: flex;
+  gap: 10px; /* Space between buttons */
+  margin-bottom: 20px;
+}
+
+.game-selector button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #6e6f70;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.game-selector button:hover {
+  background-color: #464646;
+}
+
+.game-selector button:focus {
+  outline: none;
+}
+
+/* Styling for game content */
+.game-content {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 800px;
+}

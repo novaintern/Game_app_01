@@ -1,0 +1,66 @@
+.card {
+  width: 100%;
+  padding-top: 100%; /* This keeps the card square */
+  position: relative;
+  perspective: 1000px;
+}
+
+#memory-game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+#game-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#moves-counter {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#restart-button {
+  padding: 10px 20px;
+  font-size: 16px;
+
+  margin-bottom: 20px;
+}
+
+
+
+#game-board {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  gap: 10px;
+}
+
+.card {
+  width: 100px;
+  background-color: #636464; /* Dark gray background color */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+  position: relative;
+}
+
+.card img {
+  display: none;
+  max-width: 80px; 
+  max-height: 80px; 
+  object-fit: contain; /* Maintain aspect ratio */
+  margin-top: -90px;
+}
+
+.card.revealed {
+  background-color: #fff;
+}
+
+.card.revealed img {
+  display: block;
+}

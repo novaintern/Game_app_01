@@ -1,0 +1,62 @@
+/* Container for the Hangman game */
+#hangman-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Styling for the word display */
+  #word-display {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Styling for wrong guesses information */
+  #wrong-guesses {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  /* Container for the letter buttons */
+  #letters-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 360px;
+    margin-bottom: 20px;
+  }
+  
+  /* Styling for each letter button */
+  .letter-button {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #6e6e6e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .letter-button:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+  }
+  
+  /* Hover effect for letter buttons */
+  .letter-button:not(:disabled):hover {
+    background-color: #949494;
+  }
+  
+  /* Styling for the game status message */
+  #game-status {
+    font-size: 20px;
+    font-weight: bold;
+    color: #d9534f;
+  }
+  
